@@ -4,11 +4,12 @@ import "./App.css";
 
 const App = () => {
   const [isDesktop, setIsDesktop] = useState(true);
+  const [locale, setLocale] = useState('en');
 
   return (
     <>
       <Header isDesktop />
-      <Content isDesktop />
+      {/* <Content isDesktop /> */}
     </>
   );
 };

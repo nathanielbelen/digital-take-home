@@ -1,11 +1,11 @@
-import Info from './desktop/Info'
+import InformationBar from './desktop/InformationBar'
 import NavBar from './desktop/NavBar'
 
 const Header = ({ isDesktop }) => {
   if (isDesktop) {
     return (
       <div className="header">
-        <Info />
+        <InformationBar />
         <NavBar />
       </div>
     );

@@ -1,0 +1,42 @@
+.logo {
+  padding: 0 15px;
+}
+
+.nav {
+  height: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-content: center;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-anchors {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  border-bottom: 3px solid;
+  color: var(--accent);
+}

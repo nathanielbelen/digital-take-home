@@ -1,0 +1,60 @@
+.top {
+  height: 34px;
+  background-color: black;
+}
+
+.information {
+  height: 100%;
+  display: flex;
+  color: var(--background-main);
+  align-items: center;
+}
+
+.information-flex {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.emblems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.emblem {
+
+}
+
+.flex {
+  display: flex;
+}
+
+.locale {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.language {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.cart {
+  height: 100%;
+  width: 53px;
+  background-color: var(--accent);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 6px;
+}
+
+.cart-size {
+  font-weight: 700;
+  font-size: 14px;
+}

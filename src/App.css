@@ -2,24 +2,7 @@
   box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.197771);
 }
 
-.top {
-  height: 34px;
-  background-color: black;
-}
-
-.info, .nav {
+.information, .nav {
   margin: auto;
   max-width: 1440px;
-}
-
-.info {
-  height: 100%;
-  display: flex;
-  color: white;
-}
-
-.info-flex {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
 }
