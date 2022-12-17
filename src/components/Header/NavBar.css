@@ -127,9 +127,6 @@
   cursor: pointer;
 }
 
-.footing {
-  padding: 20px 15px;
-}
 
 .menu-title {
   height: 38px;
@@ -165,4 +162,17 @@
 
 .menu-item.back img {
   transform: scaleX(-1);
+}
+
+.menu-nav {}
+
+.menu-footer {
+  padding: 10px 15px;
+}
+
+.menu-footer .item {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
 }

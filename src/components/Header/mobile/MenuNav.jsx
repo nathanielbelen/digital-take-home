@@ -1,4 +1,8 @@
-import chevron from "../../../assets/mobile/nav/menu/chevron.png";
+import chevron from "@/assets/mobile/nav/menu/chevron.png";
+import help from "@/assets/mobile/nav/menu/help.png";
+import location from "@/assets/mobile/nav/menu/location.png";
+import safety from "@/assets/mobile/nav/menu/safety.png";
+import usFlag from "@/assets/mobile/nav/menu/us-flag.png";
 import { useState, useCallback, useEffect } from "react";
 
 class Visit {
@@ -44,18 +48,34 @@ const MenuNav = ({ navigation }) => {
             currentNav={currentNav}
           />
         ))}
-      {!currentBack && <Footing />}
+      {!currentBack && <MenuFooter />}
     </div>
   );
 };
 
-const Footing = () => {
+const MenuFooter = () => {
   return (
-    <div className="footing">
-      <div>Help</div>
-      <div>Where to Buy/Rent</div>
-      <div>Safety</div>
-      <div>EN</div>
+    <div className="menu-footer">
+      <MenuFooterItem src={help} width='14' title='Help'>
+        <div>
+          <img src={chevron} width="8" />
+        </div>
+      </MenuFooterItem>
+      <MenuFooterItem src={location} title='Where to Buy/Rent' width='12' />
+      <MenuFooterItem src={safety} title='Safety' width='13' />
+      <MenuFooterItem src={usFlag} title='EN' width='22' />
+    </div>
+  );
+};
+
+const MenuFooterItem = ({ src, width, title, children }) => {
+  return (
+    <div className="item">
+      <div className="flex">
+        <img src={src} width={width} />
+      </div>
+      <div>{title}</div>
+      { children }
     </div>
   );
 };
@@ -83,7 +103,11 @@ const MenuItem = ({
   };
 
   return (
-    <div className={`menu-item link ${!currentBack && 'base'}`} key={index} onClick={handleClick}>
+    <div
+      className={`menu-item link ${!currentBack && "base"}`}
+      key={index}
+      onClick={handleClick}
+    >
       <div>{destination.name}</div>
       <img src={chevron} width="10" />
     </div>
