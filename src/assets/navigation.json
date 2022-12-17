@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Solutions",
+    "next": [
+      "Solutions by Industry",
+      "Solutions by Process",
+      "Software Solutions",
+      "Services"
+    ]
+  },
+  {
+    "name": "Products",
+    "next": [
+      "Equipment",
+      "Consumables",
+      "Safety",
+      "New Products",
+      "Promotions",
+      "Browse by Brand",
+      "Browse by Industry"
+    ]
+  },
+  {
+    "name": "Automation"
+  },
+  {
+    "name": "Education"
+  },
+  {
+    "name": "Resources"
+  }
+]

@@ -1,19 +1,26 @@
+import { useState, useEffect } from 'react';
 import Logo from './Logo'
+import { NavLinks, NavLink } from './NavLinks'
 import './NavBar.css'
+import navigation from '../../../assets/navigation.json';
 
-const NavBar = () => {
+const NavBar = ({ setDropdownOpen }) => {
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      setDropdownOpen(true);
+    }
+  }, [selectedIndex])
+
   return (
     <div className="nav">
       <Logo />
-      <div className="nav-links nav-items">
-        <a href="#" className="nav-anchors">
-          <div className="nav-link">SOLUTIONS</div>
-        </a>
-        <div className="nav-link">PRODUCTS</div>
-        <div className="nav-link">AUTOMATION</div>
-        <div className="nav-link">EDUCATION</div>
-        <div className="nav-link">RESOURCES</div>
-      </div>
+      <NavLinks>
+        {navigation.map((link, index) => {
+          return <NavLink setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex} index={index} link={link} key={index} />
+        })}
+      </NavLinks>
       <div className="search nav-items">search</div>
     </div>
   );

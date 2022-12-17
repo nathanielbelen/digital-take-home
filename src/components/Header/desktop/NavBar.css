@@ -33,10 +33,17 @@
 
 .nav-anchors {
   text-decoration: none;
+  cursor: pointer;
   color: inherit;
 }
 
 .active {
+  margin-top: 1.5px;
   border-bottom: 3px solid;
   color: var(--accent);
+}
+
+.dropdown {
+  height: 496px;
+  padding: 36px 45px;
 }
