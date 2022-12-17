@@ -1,16 +1,16 @@
-import InformationBar from "./desktop/InformationBar";
-import NavBar from "./desktop/NavBar";
+import Info from './desktop/Info'
+import NavBar from './desktop/NavBar'
 
 const Header = ({ isDesktop }) => {
   if (isDesktop) {
     return (
-      <div className="container">
-        <InformationBar />
+      <div className="header">
+        <Info />
         <NavBar />
       </div>
     );
   } else {
-    return <div className="container"></div>;
+    return <div></div>;
   }
 };
 
