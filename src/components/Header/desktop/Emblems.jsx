@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import ImageLink from '../ImageLink';
 
 const Emblems = ({ children }) => (
@@ -11,5 +12,9 @@ const Emblem = (props) => (
     <ImageLink {...props} />
   </li>
 );
+
+Emblems.propTypes = {
+  children: PropTypes.array.isRequired,
+};
 
 export { Emblems, Emblem };

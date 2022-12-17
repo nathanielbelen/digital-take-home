@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Emblems, Emblem } from './Emblems';
 import Locale from './Locale';
 import Cart from './Cart';
@@ -26,5 +27,9 @@ const InformationBar = ({ isDesktop }) => (
     </div>
   </div>
 );
+
+InformationBar.propTypes = {
+  isDesktop: PropTypes.bool.isRequired,
+};
 
 export default InformationBar;
