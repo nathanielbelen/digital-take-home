@@ -14,7 +14,7 @@ const NavLink = ({ setSelectedIndex, selectedIndex, index, link }) => {
   }
 
   return (
-    <a className="nav-anchors" onClick={handleClick}>
+    <a className="nav-anchor" onClick={handleClick}>
       <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
     </a>
   );
