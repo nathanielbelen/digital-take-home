@@ -1,4 +1,4 @@
-import ImageLink from "./ImageLink";
+import ImageLink from './../ImageLink';
 import flag from '../../../assets/desktop/information/us-flag.png'
 
 const Locale = () => {

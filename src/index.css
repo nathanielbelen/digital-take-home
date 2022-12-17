@@ -7,9 +7,15 @@
 
 :root {
   --accent: #B81830;
-  --background-main: #FFFFFF;
+  --background-main: #F4F4F4;
   --background-off: #F4F4F4;
   --background-mobile: #E5E5E5;
+  --text-dark: #181818;
+  --text-light: #404040;
+  --text-lightest: #666666;
+  --borders: #D0D0D0;
+
+  /* conflicting colors between design guide and figma */
 }
 
 .content {

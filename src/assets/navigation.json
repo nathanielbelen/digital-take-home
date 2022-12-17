@@ -2,22 +2,22 @@
   {
     "name": "Solutions",
     "next": [
-      "Solutions by Industry",
-      "Solutions by Process",
-      "Software Solutions",
-      "Services"
+      { "name": "Solutions by Industry", "next": [] },
+      { "name": "Solutions by Process", "next": [] },
+      { "name": "Software Solutions", "next": [] },
+      { "name": "Services", "next": [] }
     ]
   },
   {
     "name": "Products",
     "next": [
-      "Equipment",
-      "Consumables",
-      "Safety",
-      "New Products",
-      "Promotions",
-      "Browse by Brand",
-      "Browse by Industry"
+      { "name": "Equipment", "next": [] },
+      { "name": "Consumables", "next": [] },
+      { "name": "Safety", "next": [] },
+      { "name": "New Products", "next": [] },
+      { "name": "Promotions", "next": [] },
+      { "name": "Browse by Brand", "next": [] },
+      { "name": "Browse by Industry", "next": [] }
     ]
   },
   {

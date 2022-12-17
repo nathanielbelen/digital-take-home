@@ -1,11 +1,11 @@
-import ImageLink from "./ImageLink";
+import ImageLink from './../ImageLink';
 import logo from '../../../assets/desktop/nav/logo.png'
 // ImageLink = ({ title, link, src, width, height })
 
-const Logo = () => {
+const Logo = ({ width }) => {
   return (
     <div className='logo'>
-      <ImageLink src={logo} title='Lincoln Electric' link='#' width='115'/>
+      <ImageLink anchorClass='flex' src={logo} title='Lincoln Electric' link='/' width={width}/>
     </div>
   )
 }

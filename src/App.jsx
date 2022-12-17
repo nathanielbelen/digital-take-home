@@ -1,14 +1,15 @@
 import Header from "./components/Header";
 import { useState } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
 import "./App.css";
 
 const App = () => {
-  const [isDesktop, setIsDesktop] = useState(true);
+  const isDesktop = useMediaQuery('(min-width: 960px)');
   const [locale, setLocale] = useState('en');
 
   return (
     <>
-      <Header isDesktop />
+      <Header isDesktop={isDesktop} />
     </>
   );
 };
