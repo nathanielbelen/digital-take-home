@@ -8,11 +8,11 @@ import MenuNav from "./mobile/MenuNav";
 import { Emblems, Emblem } from "./desktop/Emblems";
 import ImageLink from "./ImageLink";
 import "./NavBar.css";
-import navigation from "../../assets/navigation.json";
-import search from '../../assets/mobile/nav/search.png'
-import hamburger from '../../assets/mobile/nav/hamburger.png'
-import profile from '../../assets/mobile/nav/profile.png'
-import cart from '../../assets/mobile/nav/cart.png'
+import navigation from "@/assets/navigation.json";
+import search from '@/assets/mobile/nav/search.png'
+import hamburger from '@/assets/mobile/nav/hamburger.png'
+import profile from '@/assets/mobile/nav/profile.png'
+import cart from '@/assets/mobile/nav/cart.png'
 
 
 const NavBar = ({ isDesktop }) => {

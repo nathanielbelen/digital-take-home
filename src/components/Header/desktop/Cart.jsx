@@ -1,4 +1,4 @@
-import ImageLink from "./../ImageLink";
+import ImageLink from "../ImageLink";
 
 // ImageLink = ({ title, link, src, anchorClass, width, height })
 const Cart = ({ src, width, isDesktop }) => {

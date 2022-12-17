@@ -1,4 +1,4 @@
-import ImageLink from './../ImageLink';
+import ImageLink from '../ImageLink';
 
 const Emblems = ({ children }) => {
   return (

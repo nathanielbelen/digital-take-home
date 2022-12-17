@@ -4,11 +4,11 @@ import Cart from "./Cart";
 import "./InformationBar.css";
 
 // images for emblems
-import secure from "../../../assets/desktop/information/secure.png";
-import help from "../../../assets/desktop/information/help.png";
-import location from "../../../assets/desktop/information/location.png";
-import profile from "../../../assets/desktop/information/profile.png";
-import cart from "../../../assets/desktop/information/cart.png";
+import secure from "@/assets/desktop/information/secure.png";
+import help from "@/assets/desktop/information/help.png";
+import location from "@/assets/desktop/information/location.png";
+import profile from "@/assets/desktop/information/profile.png";
+import cart from "@/assets/desktop/information/cart.png";
 
 const InformationBar = () => {
   return (

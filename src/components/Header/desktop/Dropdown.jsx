@@ -4,7 +4,7 @@ const Dropdown = ({ navigation, selectedIndex }) => {
       <ul className="dropdown-content">
         {navigation[selectedIndex].next.map((destination, index) => {
           return (
-            <li className="links">
+            <li className="links" key={index}>
               <a>{destination.name}</a>
             </li>
           );

@@ -1,5 +1,5 @@
-import ImageLink from './../ImageLink';
-import logo from '../../../assets/desktop/nav/logo.png'
+import ImageLink from '../ImageLink';
+import logo from '@/assets/desktop/nav/logo.png'
 // ImageLink = ({ title, link, src, width, height })
 
 const Logo = ({ width }) => {
