@@ -1,7 +1,7 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect } from 'react';
 import MenuFooter from './MenuFooter';
-import chevron from "@/assets/mobile/nav/menu/chevron.png";
-import close from "@/assets/mobile/nav/menu/close.png";
+import chevron from '@/assets/mobile/nav/menu/chevron.png';
+import close from '@/assets/mobile/nav/menu/close.png';
 
 class Visit {
   constructor(val, prev) {
@@ -11,15 +11,13 @@ class Visit {
 }
 
 const MenuNav = ({ setShowMenuNav, navigation }) => {
-  const nav = useCallback(() => {
-    return navigation.map((val) => {
-      val.back = navigation;
-      val.next.forEach((val2) => {
-        val2.back = val;
-      });
-      return val;
+  const nav = useCallback(() => navigation.map((val) => {
+    val.back = navigation;
+    val.next.forEach((val2) => {
+      val2.back = val;
     });
-  }, [navigation]);
+    return val;
+  }), [navigation]);
 
   const [currentBack, setCurrentBack] = useState(null);
   const [currentNav, setCurrentNav] = useState(nav);
@@ -34,8 +32,8 @@ const MenuNav = ({ setShowMenuNav, navigation }) => {
           currentBack={currentBack}
         />
       )}
-      {currentNav &&
-        currentNav.map((destination, index) => (
+      {currentNav
+        && currentNav.map((destination, index) => (
           <MenuItem
             destination={destination}
             index={index}
@@ -54,7 +52,7 @@ const MenuNav = ({ setShowMenuNav, navigation }) => {
 const MenuTitle = ({ setShowMenuNav }) => {
   const handleClick = () => {
     setShowMenuNav(false);
-  }
+  };
 
   return (
     <div className="menu-title">
@@ -81,7 +79,7 @@ const MenuItem = ({
 
   return (
     <a
-      className={`menu-item link ${!currentBack && "base"}`}
+      className={`menu-item link ${!currentBack && 'base'}`}
       key={index}
       onClick={handleClick}
     >
@@ -91,19 +89,17 @@ const MenuItem = ({
   );
 };
 
-const MenuBack = ({ setCurrentNav, setCurrentBack, currentBack }) => {
-  return (
-    <div
-      className="menu-item back"
-      onClick={() => {
-        setCurrentNav(currentBack.val);
-        setCurrentBack(currentBack.prev);
-      }}
-    >
-      <img src={chevron} width="10" />
-      <div>GO BACK</div>
-    </div>
-  );
-};
+const MenuBack = ({ setCurrentNav, setCurrentBack, currentBack }) => (
+  <div
+    className="menu-item back"
+    onClick={() => {
+      setCurrentNav(currentBack.val);
+      setCurrentBack(currentBack.prev);
+    }}
+  >
+    <img src={chevron} width="10" />
+    <div>GO BACK</div>
+  </div>
+);
 
 export default MenuNav;
