@@ -1,9 +1,7 @@
-import chevron from "@/assets/mobile/nav/menu/chevron.png";
-import help from "@/assets/mobile/nav/menu/help.png";
-import location from "@/assets/mobile/nav/menu/location.png";
-import safety from "@/assets/mobile/nav/menu/safety.png";
-import usFlag from "@/assets/mobile/nav/menu/us-flag.png";
 import { useState, useCallback, useEffect } from "react";
+import MenuFooter from './MenuFooter';
+import chevron from "@/assets/mobile/nav/menu/chevron.png";
+import close from "@/assets/mobile/nav/menu/close.png";
 
 class Visit {
   constructor(val, prev) {
@@ -12,7 +10,7 @@ class Visit {
   }
 }
 
-const MenuNav = ({ navigation }) => {
+const MenuNav = ({ setShowMenuNav, navigation }) => {
   const nav = useCallback(() => {
     return navigation.map((val) => {
       val.back = navigation;
@@ -28,7 +26,7 @@ const MenuNav = ({ navigation }) => {
 
   return (
     <div className="showMenuNav">
-      <MenuTitle />
+      <MenuTitle setShowMenuNav={setShowMenuNav} />
       {currentBack && (
         <MenuBack
           setCurrentNav={setCurrentNav}
@@ -53,38 +51,17 @@ const MenuNav = ({ navigation }) => {
   );
 };
 
-const MenuFooter = () => {
-  return (
-    <div className="menu-footer">
-      <MenuFooterItem src={help} width='14' title='Help'>
-        <div>
-          <img src={chevron} width="8" />
-        </div>
-      </MenuFooterItem>
-      <MenuFooterItem src={location} title='Where to Buy/Rent' width='12' />
-      <MenuFooterItem src={safety} title='Safety' width='13' />
-      <MenuFooterItem src={usFlag} title='EN' width='22' />
-    </div>
-  );
-};
+const MenuTitle = ({ setShowMenuNav }) => {
+  const handleClick = () => {
+    setShowMenuNav(false);
+  }
 
-const MenuFooterItem = ({ src, width, title, children }) => {
-  return (
-    <div className="item">
-      <div className="flex">
-        <img src={src} width={width} />
-      </div>
-      <div>{title}</div>
-      { children }
-    </div>
-  );
-};
-
-const MenuTitle = () => {
   return (
     <div className="menu-title">
       <div>Menu</div>
-      <div>X</div>
+      <div onClick={handleClick}>
+        <img src={close} width="12" />
+      </div>
     </div>
   );
 };
@@ -103,14 +80,14 @@ const MenuItem = ({
   };
 
   return (
-    <div
+    <a
       className={`menu-item link ${!currentBack && "base"}`}
       key={index}
       onClick={handleClick}
     >
       <div>{destination.name}</div>
       <img src={chevron} width="10" />
-    </div>
+    </a>
   );
 };
 

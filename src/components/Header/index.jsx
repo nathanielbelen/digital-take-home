@@ -1,4 +1,3 @@
-import { useState } from "react";
 import InformationBar from "./desktop/InformationBar";
 import NavBar from "./NavBar";
 
@@ -6,7 +5,7 @@ const Header = ({ isDesktop }) => {
   if (isDesktop) {
     return (
       <div className="header">
-        <InformationBar />
+        <InformationBar isDesktop={isDesktop} />
         <NavBar isDesktop={isDesktop} />
       </div>
     );

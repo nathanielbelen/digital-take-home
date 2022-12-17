@@ -135,6 +135,7 @@
   align-items: center;
   background-color: black;
   color: white;
+  padding: 17px;
 }
 
 .menu-item {
@@ -150,6 +151,7 @@
 
 .menu-item.link {
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .menu-item.link.base {
@@ -158,13 +160,12 @@
 
 .menu-item.back {
   background-color: white;
+  cursor: pointer;
 }
 
 .menu-item.back img {
   transform: scaleX(-1);
 }
-
-.menu-nav {}
 
 .menu-footer {
   padding: 10px 15px;
@@ -175,4 +176,5 @@
   gap: 6px;
   padding: 10px;
   align-items: center;
+  cursor: pointer;
 }

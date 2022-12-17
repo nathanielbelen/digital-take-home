@@ -10,7 +10,7 @@ import location from "@/assets/desktop/information/location.png";
 import profile from "@/assets/desktop/information/profile.png";
 import cart from "@/assets/desktop/information/cart.png";
 
-const InformationBar = () => {
+const InformationBar = ({ isDesktop }) => {
   return (
     <div className="top">
       <div className="information">
@@ -23,7 +23,7 @@ const InformationBar = () => {
             <Emblem title="profile" src={profile} width="15" link="#" anchorClass='flex' />
           </Emblems>
         </div>
-        <Cart src={cart} width="16" />
+        <Cart isDesktop={isDesktop} src={cart} width="16" />
       </div>
     </div>
   );

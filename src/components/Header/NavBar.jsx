@@ -18,7 +18,7 @@ import cart from '@/assets/mobile/nav/cart.png'
 const NavBar = ({ isDesktop }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [showMenuNav, setShowMenuNav] = useState(true);
+  const [showMenuNav, setShowMenuNav] = useState(false);
 
   useEffect(() => {
     if (selectedIndex !== null) {
