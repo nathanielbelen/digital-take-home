@@ -6,16 +6,9 @@ import MenuItem from './MenuItem';
 import MenuBack from './MenuBack';
 
 const MenuNav = ({ setShowMenuNav, navigation }) => {
-  const nav = useCallback(() => navigation.map((val) => {
-    val.back = navigation;
-    val.next.forEach((val2) => {
-      val2.back = val;
-    });
-    return val;
-  }), [navigation]);
 
   const [currentBack, setCurrentBack] = useState(null);
-  const [currentNav, setCurrentNav] = useState(nav);
+  const [currentNav, setCurrentNav] = useState(navigation);
 
   return (
     <div className="showMenuNav">

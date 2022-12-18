@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Emblems, Emblem } from './Emblems';
 import Locale from './Locale';
-import Cart from './Cart';
+import Cart from '../Cart';
 import './InformationBar.css';
 
 // images for emblems

@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
+// universal import
+import Cart from './Cart';
+
 // desktop imports
 import { NavLinks, NavLink } from './desktop/NavLinks';
 import { Emblems, Emblem } from './desktop/Emblems';
 import Logo from './desktop/Logo';
 import Dropdown from './desktop/Dropdown';
 import Search from './desktop/Search';
-import Cart from './desktop/Cart';
 
 // mobile imports
 import MenuNav from './mobile/MenuNav';

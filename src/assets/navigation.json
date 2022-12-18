@@ -2,34 +2,34 @@
   {
     "name": "Solutions",
     "next": [
-      { "name": "Solutions by Industry", "next": [] },
-      { "name": "Solutions by Process", "next": [] },
-      { "name": "Software Solutions", "next": [] },
-      { "name": "Services", "next": [] }
+      { "name": "Solutions by Industry", "url": "/" },
+      { "name": "Solutions by Process", "url": "/" },
+      { "name": "Software Solutions", "url": "/" },
+      { "name": "Services", "url": "/" }
     ]
   },
   {
     "name": "Products",
     "next": [
-      { "name": "Equipment", "next": [] },
-      { "name": "Consumables", "next": [] },
-      { "name": "Safety", "next": [] },
-      { "name": "New Products", "next": [] },
-      { "name": "Promotions", "next": [] },
-      { "name": "Browse by Brand", "next": [] },
-      { "name": "Browse by Industry", "next": [] }
+      { "name": "Equipment", "url": "/" },
+      { "name": "Consumables", "url": "/" },
+      { "name": "Safety", "url": "/" },
+      { "name": "New Products", "url": "/" },
+      { "name": "Promotions", "url": "/" },
+      { "name": "Browse by Brand", "url": "/" },
+      { "name": "Browse by Industry", "url": "/" }
     ]
   },
   {
     "name": "Automation",
-    "next": []
+    "url": "/"
   },
   {
     "name": "Education",
-    "next": []
+    "url": "/"
   },
   {
     "name": "Resources",
-    "next": []
+    "url": "/"
   }
 ]

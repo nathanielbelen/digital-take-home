@@ -187,6 +187,8 @@
   cursor: pointer;
   background-color: inherit;
   border: none;
+  color: inherit;
+  text-decoration: inherit;
   font-weight: inherit;
   font-size: inherit;
 }
