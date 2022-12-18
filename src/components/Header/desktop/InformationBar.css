@@ -6,7 +6,7 @@
 .information {
   height: 100%;
   display: flex;
-  color: var(--background-main);
+  color: var(--text-contrast);
   align-items: center;
 }
 
