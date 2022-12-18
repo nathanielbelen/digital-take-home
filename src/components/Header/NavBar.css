@@ -214,7 +214,7 @@
 .menu-item.link {
   justify-content: space-between;
   cursor: pointer;
-  background-color: var(--background-main);
+  background-color: var(--background-off);
   color: var(--text-dark);
   text-decoration: inherit;
 }
@@ -248,7 +248,7 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  background-color: var(--background-main);
+  background-color: var(--background-off);
   color: var(--text-dark);
   font-weight: inherit;
   font-size: inherit;
