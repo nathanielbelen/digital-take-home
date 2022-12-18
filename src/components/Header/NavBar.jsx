@@ -54,7 +54,7 @@ const NavBar = ({ isDesktop }) => {
           <Search />
         </div>
         {dropdownOpen && (
-          <Dropdown navigation={navigation} selectedIndex={selectedIndex} />
+          <Dropdown navigation={navigation} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
         )}
       </>
     );

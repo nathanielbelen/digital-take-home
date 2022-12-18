@@ -1,12 +1,26 @@
 import PropTypes from 'prop-types';
+import { useEffect, useRef } from 'react';
 
-const Dropdown = ({ navigation, selectedIndex }) => {
+const Dropdown = ({ navigation, selectedIndex, setSelectedIndex }) => {
+  const wrapperRef = useRef(null);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setSelectedIndex(null);
+      }
+    }
+    document.addEventListener('mouseup', handleClickOutside);
+    return () => {
+      document.removeEventListener('mouseup', handleClickOutside);
+    };
+  });
+
   if (selectedIndex !== null) {
     return (
       <>
-        <div className="dropdown">
+        <div ref={wrapperRef} className="dropdown">
           <ul className="dropdown-content">
-            {navigation[selectedIndex].next.map((destination, index) => (
+            {navigation[selectedIndex].next && navigation[selectedIndex].next.map((destination, index) => (
               <li className="links" key={index}>
                 <a href="/">{destination.name}</a>
               </li>
