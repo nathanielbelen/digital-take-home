@@ -23,6 +23,8 @@
         "jsx-a11y/anchor-is-valid": "off",
         "import/no-unresolved": "off",
         "react/jsx-props-no-spreading": "off",
-        "react/forbid-prop-types": "off"
+        "react/forbid-prop-types": "off",
+        "consistent-return": "off",
+        "object-curly-newline": "off"
     }
 }
