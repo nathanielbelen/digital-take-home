@@ -2,10 +2,12 @@ import ImageLink from '../ImageLink';
 import flag from '@/assets/desktop/information/us-flag.png';
 
 const Locale = () => (
-  <div className="locale">
-    <ImageLink anchorClass="flex" title="United States" link="#" width="22" src={flag} />
+  <button type="button" className="locale">
+    <div className="flex">
+      <img src={flag} width="22" alt="US flag" />
+    </div>
     <div className="language">EN</div>
-  </div>
+  </button>
 );
 
 export default Locale;

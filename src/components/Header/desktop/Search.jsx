@@ -5,13 +5,22 @@ import search from '@/assets/desktop/nav/search.png';
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('submitted search term: ', searchTerm);
+  };
+
   return (
-    <div className="search">
-      <input placeholder="Search" className="input" />
-      <div>
+    <form className="search">
+      <input type="text" value={searchTerm} onChange={handleChange} placeholder="Search" className="input" />
+      <button type="submit" className="search-button" onClick={handleSubmit}>
         <ImageLink anchorClass="flex" src={search} title="search" width="16" />
-      </div>
-    </div>
+      </button>
+    </form>
   );
 };
 

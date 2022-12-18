@@ -1,6 +1,6 @@
 .top {
   height: 34px;
-  background-color: black;
+  background-color: var(--background-contrast);
 }
 
 .information {
@@ -37,11 +37,15 @@
   display: flex;
   align-items: center;
   gap: 7px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .language {
   font-size: 13.5px;
   font-weight: 700;
+  color: var(--text-contrast);
 }
 
 .cart {
@@ -52,6 +56,9 @@
   justify-content: center;
   display: flex;
   gap: 6px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 

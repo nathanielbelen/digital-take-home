@@ -20,13 +20,13 @@ const MenuFooter = () => (
 const MenuFooterItem = ({
   src, width, title, children,
 }) => (
-  <a className="item">
+  <button type="button" className="item">
     <div className="flex">
       <img src={src} width={width} />
     </div>
     <div>{title}</div>
     {children}
-  </a>
+  </button>
 );
 
 export default MenuFooter;

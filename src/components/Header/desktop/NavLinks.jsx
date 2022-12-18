@@ -6,18 +6,20 @@ const NavLinks = ({ children }) => (
   </div>
 );
 
-const NavLink = ({
-  setSelectedIndex, selectedIndex, index, link,
-}) => {
+const NavLink = ({ setSelectedIndex, selectedIndex, index, link }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    setSelectedIndex(index);
+    if (selectedIndex === index) {
+      setSelectedIndex(null);
+    } else {
+      setSelectedIndex(index);
+    }
   };
 
   return (
-    <a className="nav-anchor" onClick={handleClick}>
+    <button type="button" className="nav-anchor" onClick={handleClick}>
       <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
-    </a>
+    </button>
   );
 };
 

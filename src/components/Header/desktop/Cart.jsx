@@ -3,10 +3,12 @@ import ImageLink from '../ImageLink';
 
 // ImageLink = ({ title, link, src, anchorClass, width, height })
 const Cart = ({ src, width, isDesktop }) => (
-  <div className={isDesktop ? 'cart' : 'cart-mobile'}>
-    <ImageLink title="cart" link="#" anchorClass="flex" src={src} width={width} />
+  <button type="button" className={isDesktop ? 'cart' : 'cart-mobile'}>
+    <div className="flex">
+      <img src={src} width={width} alt="cart" />
+    </div>
     <div className="cart-size">3</div>
-  </div>
+  </button>
 );
 
 Cart.propTypes = {

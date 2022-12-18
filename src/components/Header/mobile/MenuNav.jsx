@@ -57,9 +57,9 @@ const MenuTitle = ({ setShowMenuNav }) => {
   return (
     <div className="menu-title">
       <div>Menu</div>
-      <div onClick={handleClick}>
+      <button type="button" onClick={handleClick}>
         <img src={close} width="12" />
-      </div>
+      </button>
     </div>
   );
 };
@@ -78,19 +78,20 @@ const MenuItem = ({
   };
 
   return (
-    <a
+    <button
+      type="button"
       className={`menu-item link ${!currentBack && 'base'}`}
       key={index}
       onClick={handleClick}
     >
       <div>{destination.name}</div>
-      <img src={chevron} width="10" />
-    </a>
+      <img src={chevron} width="10" alt={destination.name} />
+    </button>
   );
 };
 
 const MenuBack = ({ setCurrentNav, setCurrentBack, currentBack }) => (
-  <div
+  <button
     className="menu-item back"
     onClick={() => {
       setCurrentNav(currentBack.val);
@@ -99,7 +100,7 @@ const MenuBack = ({ setCurrentNav, setCurrentBack, currentBack }) => (
   >
     <img src={chevron} width="10" />
     <div>GO BACK</div>
-  </div>
+  </button>
 );
 
 export default MenuNav;

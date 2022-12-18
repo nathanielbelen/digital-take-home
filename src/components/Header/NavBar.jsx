@@ -49,7 +49,7 @@ const NavBar = ({ isDesktop }) => {
       </>
     );
   }
-  // need to style this to have nav be flex
+
   return (
     <div className="nav-mobile">
       <div className="left">
@@ -58,7 +58,7 @@ const NavBar = ({ isDesktop }) => {
       </div>
       <Emblems>
         <Emblem title="search" src={search} width="15" link="#" />
-        <Emblem title="profile" src={profile} width="15" link="#" />
+        <Emblem title="profile" src={profile} width="15" link="/" />
         <li className="emblem">
           <Cart isDesktop={isDesktop} src={cart} width="16" />
         </li>
@@ -74,7 +74,11 @@ const Hamburger = ({ setShowMenuNav }) => {
     setShowMenuNav(true);
   };
 
-  return (<ImageLink anchorClass="hamburger" src={hamburger} width="30" onClick={handleClick} />);
+  return (
+    <button type="button" className="hamburger" onClick={handleClick}>
+      <img src={hamburger} width="30" alt="menu" />
+    </button>
+  );
 };
 
 export default NavBar;

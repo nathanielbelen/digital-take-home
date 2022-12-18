@@ -36,6 +36,8 @@
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+  border: none;
+  background-color: inherit;
 }
 
 .active {
@@ -57,6 +59,12 @@
   border: none;
   text-align: right;
   width: 150px;
+}
+
+.search-button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .search .input:focus {
@@ -87,6 +95,11 @@
   line-height: 32px;
   padding: 0 0 15px;
   cursor: pointer;
+}
+
+.dropdown-content .links a {
+  color: var(--text-dark);
+  text-decoration: none;
 }
 
 .nav-mobile {
@@ -121,10 +134,15 @@
   justify-content: center;
   display: flex;
   gap: 6px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .hamburger {
   cursor: pointer;
+  background-color: inherit;
+  border: none;
 }
 
 
@@ -136,6 +154,12 @@
   background-color: black;
   color: white;
   padding: 17px;
+}
+
+.menu-title button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .menu-item {
@@ -152,6 +176,10 @@
 .menu-item.link {
   justify-content: space-between;
   cursor: pointer;
+  background-color: inherit;
+  border: none;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .menu-item.link.base {
@@ -161,6 +189,9 @@
 .menu-item.back {
   background-color: white;
   cursor: pointer;
+  border: none;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .menu-item.back img {
@@ -177,4 +208,8 @@
   padding: 10px;
   align-items: center;
   cursor: pointer;
+  border: none;
+  background-color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }

@@ -17,10 +17,10 @@ const InformationBar = ({ isDesktop }) => (
       <div className="information-flex">
         <Locale />
         <Emblems>
-          <Emblem title="secure" src={secure} width="15" link="#" anchorClass="flex" />
-          <Emblem title="help" src={help} width="15" link="#" anchorClass="flex" />
-          <Emblem title="location" src={location} width="12" link="#" anchorClass="flex" />
-          <Emblem title="profile" src={profile} width="15" link="#" anchorClass="flex" />
+          <Emblem title="secure" src={secure} width="15" link="/" anchorClass="flex" />
+          <Emblem title="help" src={help} width="15" link="/" anchorClass="flex" />
+          <Emblem title="location" src={location} width="12" link="/" anchorClass="flex" />
+          <Emblem title="profile" src={profile} width="15" link="/" anchorClass="flex" />
         </Emblems>
       </div>
       <Cart isDesktop={isDesktop} src={cart} width="16" />
