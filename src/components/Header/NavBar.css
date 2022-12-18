@@ -172,7 +172,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: var(--background-contrast);
   color: white;
   padding: 17px;
 }
