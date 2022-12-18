@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import hamburger from '@/assets/mobile/nav/hamburger.png';
 
-const Hamburger = ({ setShowMenuNav }) => {
+const Hamburger = ({ setShowMenuNav, width }) => {
   const handleClick = (e) => {
     e.preventDefault();
     setShowMenuNav(true);
@@ -9,7 +9,7 @@ const Hamburger = ({ setShowMenuNav }) => {
 
   return (
     <button type="button" className="hamburger" onClick={handleClick}>
-      <img src={hamburger} width="30" alt="menu" />
+      <img src={hamburger} width={width} alt="menu" />
     </button>
   );
 };

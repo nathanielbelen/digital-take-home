@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 // universal import
 import Cart from './Cart';
+import './NavBar.css';
 
 // desktop imports
 import { NavLinks, NavLink } from './desktop/NavLinks';
@@ -14,7 +15,6 @@ import Search from './desktop/Search';
 // mobile imports
 import MenuNav from './mobile/MenuNav';
 import Hamburger from './mobile/Hamburger';
-import './NavBar.css';
 
 // asset imports
 import navigation from '@/assets/navigation.json';
@@ -63,14 +63,14 @@ const NavBar = ({ isDesktop }) => {
   return (
     <div className="nav-mobile">
       <div className="left">
-        <Hamburger setShowMenuNav={setShowMenuNav} />
-        <Logo width="115" />
+        <Hamburger setShowMenuNav={setShowMenuNav} width="21" />
+        <Logo width="91" />
       </div>
       <Emblems>
-        <Emblem title="search" src={search} width="15" link="/" />
-        <Emblem title="profile" src={profile} width="15" link="/" />
+        <Emblem title="search" src={search} width="17" link="/" anchorClass="flex" />
+        <Emblem title="profile" src={profile} width="18" link="/" anchorClass="flex" />
         <li className="emblem">
-          <Cart isDesktop={isDesktop} src={cart} width="16" />
+          <Cart isDesktop={isDesktop} src={cart} width="20" anchorClass="flex" />
         </li>
       </Emblems>
       {showMenuNav && <MenuNav setShowMenuNav={setShowMenuNav} navigation={navigation} />}

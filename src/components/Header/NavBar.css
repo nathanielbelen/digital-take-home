@@ -11,7 +11,7 @@
 }
 
 .nav-items {
-  padding: 0 20px;
+  padding: 0 0 0 20px;
   gap: 40px;
 }
 
@@ -23,8 +23,8 @@
 
 .nav-link {
   font-weight: 700;
-  font-size: 17px;
-  line-height: 23px;
+  font-size: var(--text-size-lg);
+  line-height: var(--text-height-lg);
   text-transform: uppercase;
   height: 100%;
   display: flex;
@@ -51,14 +51,20 @@
   align-items: center;
   justify-content: flex-end;
   gap: 9px;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 
 .search .input {
-  font-size: 15px;
+  font-size: var(--text-size-md);
+  line-height: var(--text-height-md);
+  color: var(--text-dark);
   border: none;
   text-align: right;
-  width: 150px;
+  width: 100px;
+}
+
+.search .input::placeholder {
+  color: var(--text-dark);
 }
 
 .search-button {
@@ -100,9 +106,9 @@
 .dropdown-content .links {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 32px;
-  padding: 0 0 15px;
+  font-size: var(--text-size-lg);
+  line-height: var(--text-height-lg);
+  padding: 0 0 25px;
   cursor: pointer;
 }
 
@@ -112,6 +118,7 @@
 }
 
 .nav-mobile {
+  height: 48px;
   max-width: inherit;
   display: flex;
   justify-content: space-between;
@@ -135,14 +142,15 @@
   flex-direction: column;
   gap: 1px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: var(--text-size-md);
+  line-height: var(--text-height-md);
 }
 
 .cart-mobile {
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 6px;
+  gap: 4px;
   border: none;
   background-color: inherit;
   cursor: pointer;
@@ -210,13 +218,13 @@
 }
 
 .menu-footer {
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 .menu-footer .item {
   display: flex;
   gap: 6px;
-  padding: 10px;
+  padding: 10px 14px;
   align-items: center;
   cursor: pointer;
   border: none;

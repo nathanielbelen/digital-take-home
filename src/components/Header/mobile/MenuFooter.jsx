@@ -8,14 +8,14 @@ import chevron from '@/assets/mobile/nav/menu/chevron.png';
 const MenuFooter = () => (
   <div className="menu-footer">
     <MenuFooterItem src={help} width="14" title="Help">
-      <div>
+      <div className="flex">
         <img src={chevron} width="8" alt="help" />
       </div>
     </MenuFooterItem>
     <MenuFooterItem src={location} title="Where to Buy/Rent" width="12" />
     <MenuFooterItem src={safety} title="Safety" width="13" />
     <MenuFooterItem src={usFlag} title="EN" width="22" />
-  </div>
+  </div >
 );
 
 const MenuFooterItem = ({

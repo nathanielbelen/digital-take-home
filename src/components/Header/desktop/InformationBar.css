@@ -22,7 +22,13 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  gap: 15px;
+  gap: 16px;
+}
+
+.emblem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flex {
@@ -39,7 +45,8 @@
 }
 
 .language {
-  font-size: 13.5px;
+  font-size: var(--text-size-sm);
+  line-height: var(--text-height-sm);
   font-weight: 700;
   color: var(--text-contrast);
 }
@@ -60,6 +67,7 @@
 
 .cart-size {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--text-size-md);
+  line-height: var(--text-height-md);
   color: inherit;
 }
