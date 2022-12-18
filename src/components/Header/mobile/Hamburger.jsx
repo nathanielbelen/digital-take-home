@@ -16,6 +16,7 @@ const Hamburger = ({ setShowMenuNav, width }) => {
 
 Hamburger.propTypes = {
   setShowMenuNav: PropTypes.func.isRequired,
+  width: PropTypes.string.isRequired,
 };
 
 export default Hamburger;

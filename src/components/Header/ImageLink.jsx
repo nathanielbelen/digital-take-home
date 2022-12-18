@@ -24,5 +24,6 @@ ImageLink.defaultProps = {
   height: undefined,
   onClick: undefined,
   anchorClass: undefined,
-}
+};
+
 export default ImageLink;

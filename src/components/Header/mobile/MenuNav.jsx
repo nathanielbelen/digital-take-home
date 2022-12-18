@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import MenuFooter from './MenuFooter';
 import MenuTitle from './MenuTitle';
 import MenuItem from './MenuItem';
 import MenuBack from './MenuBack';
 
 const MenuNav = ({ setShowMenuNav, navigation }) => {
-
   const [currentBack, setCurrentBack] = useState(null);
   const [currentNav, setCurrentNav] = useState(navigation);
 

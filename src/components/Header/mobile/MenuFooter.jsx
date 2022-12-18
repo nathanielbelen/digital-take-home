@@ -15,7 +15,7 @@ const MenuFooter = () => (
     <MenuFooterItem src={location} title="Where to Buy/Rent" width="12" />
     <MenuFooterItem src={safety} title="Safety" width="13" />
     <MenuFooterItem src={usFlag} title="EN" width="22" />
-  </div >
+  </div>
 );
 
 const MenuFooterItem = ({

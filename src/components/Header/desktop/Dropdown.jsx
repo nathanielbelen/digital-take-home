@@ -38,6 +38,7 @@ const Dropdown = ({ navigation, selectedIndex, setSelectedIndex }) => {
 Dropdown.propTypes = {
   navigation: PropTypes.array.isRequired,
   selectedIndex: PropTypes.number,
+  setSelectedIndex: PropTypes.func.isRequired,
 };
 
 Dropdown.defaultProps = {

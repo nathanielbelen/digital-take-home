@@ -1,4 +1,4 @@
-import PropTypes, { func } from 'prop-types';
+import PropTypes from 'prop-types';
 import close from '@/assets/mobile/nav/menu/close.png';
 
 const MenuTitle = ({ setShowMenuNav }) => {

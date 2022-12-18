@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import InformationBar from './desktop/InformationBar';
 import NavBar from './NavBar';
+import './index.css';
 
 const Header = ({ isDesktop }) => {
   if (isDesktop) {
