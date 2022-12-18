@@ -60,7 +60,7 @@ const NavBar = ({ isDesktop }) => {
         <Emblem title="search" src={search} width="15" link="#" />
         <Emblem title="profile" src={profile} width="15" link="#" />
         <li className="emblem">
-          <Cart src={cart} width="16" />
+          <Cart isDesktop={isDesktop} src={cart} width="16" />
         </li>
       </Emblems>
       {showMenuNav && <MenuNav setShowMenuNav={setShowMenuNav} navigation={navigation} />}
