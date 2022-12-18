@@ -6,7 +6,6 @@ import Search from './desktop/Search';
 import Cart from './desktop/Cart';
 import MenuNav from './mobile/MenuNav';
 import { Emblems, Emblem } from './desktop/Emblems';
-import ImageLink from './ImageLink';
 import './NavBar.css';
 import navigation from '@/assets/navigation.json';
 import search from '@/assets/mobile/nav/search.png';
@@ -20,8 +19,10 @@ const NavBar = ({ isDesktop }) => {
   const [showMenuNav, setShowMenuNav] = useState(false);
 
   useEffect(() => {
-    if (selectedIndex !== null) {
+    if (selectedIndex === 0 || selectedIndex === 1) {
       setDropdownOpen(true);
+    } else {
+      setDropdownOpen(false);
     }
   }, [selectedIndex]);
 
