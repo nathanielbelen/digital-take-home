@@ -107,7 +107,7 @@
   z-index: -1;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.304);
+  background-color: rgba(0, 0, 0, 0.684);
 }
 
 .dropdown-content {
@@ -212,8 +212,8 @@
 .menu-item.link {
   justify-content: space-between;
   cursor: pointer;
-  color: inherit;
   background-color: inherit;
+  color: inherit;
   text-decoration: inherit;
 }
 
