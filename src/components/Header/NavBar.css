@@ -44,6 +44,13 @@
   margin-top: 1.5px;
   border-bottom: 3px solid;
   color: var(--accent);
+  animation-name: turn-active;
+  animation: 200ms ease-in;
+}
+
+@keyframes turn-active {
+  from {color: var(--text-dark);}
+  to {color: var(--accent);}
 }
 
 .search {
@@ -60,12 +67,17 @@
   color: var(--text-dark);
   border: none;
   text-align: right;
-  width: 100px;
+  width: 50px;
 }
 
 .search .input::placeholder {
   color: var(--text-dark);
 }
+
+.search .input:focus {
+  width: 200px;
+}
+
 
 .search-button {
   border: none;
@@ -135,7 +147,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: var(--background-mobile);
+  background: var(--background-off);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -173,7 +185,6 @@
 }
 
 .menu-title button {
-  border: none;
   background-color: inherit;
   cursor: pointer;
 }
@@ -185,19 +196,25 @@
   align-items: center;
   gap: 5px;
   padding: 17px;
-  border-bottom: solid 1px;
-  border-color: rgb(179, 179, 179);
+  font-weight: inherit;
+  font-size: inherit;
+  border-bottom: solid 1px #D0D0D0;
+}
+
+.menu-item.button {
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--background-main);
+  border: none;
+  border-bottom: solid 1px #D0D0D0;
 }
 
 .menu-item.link {
   justify-content: space-between;
   cursor: pointer;
-  background-color: inherit;
-  border: none;
   color: inherit;
+  background-color: inherit;
   text-decoration: inherit;
-  font-weight: inherit;
-  font-size: inherit;
 }
 
 .menu-item.link.base {
@@ -210,6 +227,7 @@
   border: none;
   font-weight: inherit;
   font-size: inherit;
+  border-bottom: solid 1px #D0D0D0;
 }
 
 .menu-item.back img {

@@ -24,7 +24,7 @@ const MenuItem = ({
     return (
       <button
         type="button"
-        className={`menu-item link ${!currentBack && 'base'}`}
+        className={`menu-item button ${!currentBack && 'base'}`}
         key={index}
         onClick={handleClick}
       >
