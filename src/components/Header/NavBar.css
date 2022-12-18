@@ -219,6 +219,7 @@
 
 .menu-item.back {
   background-color: white;
+  color: var(--text-dark);
   cursor: pointer;
   border: none;
   font-weight: inherit;
