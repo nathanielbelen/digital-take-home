@@ -157,6 +157,7 @@
   gap: 4px;
   border: none;
   background-color: inherit;
+  color: var(--text-dark);
   cursor: pointer;
 }
 
@@ -179,6 +180,7 @@
 
 .menu-title button {
   background-color: inherit;
+  border: none;
   cursor: pointer;
 }
 
@@ -199,6 +201,7 @@
   cursor: pointer;
   background-color: var(--background-main);
   border: none;
+  color: var(--text-dark);
   border-bottom: solid 1px #D0D0D0;
 }
 
@@ -239,6 +242,7 @@
   cursor: pointer;
   border: none;
   background-color: inherit;
+  color: var(--text-dark);
   font-weight: inherit;
   font-size: inherit;
 }
