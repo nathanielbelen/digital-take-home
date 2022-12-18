@@ -16,7 +16,6 @@ const MenuItem = ({
   index,
   destination,
 }) => {
-  console.log(destination);
   const handleClick = () => {
     setCurrentBack(new Visit(currentNav, currentBack));
     setCurrentNav(currentNav[index].next);

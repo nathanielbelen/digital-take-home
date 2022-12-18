@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 
 const Dropdown = ({ navigation, selectedIndex, setSelectedIndex }) => {
   const wrapperRef = useRef(null);
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
@@ -20,11 +21,12 @@ const Dropdown = ({ navigation, selectedIndex, setSelectedIndex }) => {
       <>
         <div ref={wrapperRef} className="dropdown">
           <ul className="dropdown-content">
-            {navigation[selectedIndex].next && navigation[selectedIndex].next.map((destination, index) => (
-              <li className="links" key={index}>
-                <a href="/">{destination.name}</a>
-              </li>
-            ))}
+            {navigation[selectedIndex].next
+              && navigation[selectedIndex].next.map((destination, index) => (
+                <li className="links" key={index}>
+                  <a href="/">{destination.name}</a>
+                </li>
+              ))}
           </ul>
         </div>
         <div className="mask" />
