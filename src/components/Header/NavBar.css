@@ -188,6 +188,8 @@
   color: var(--text-contrast);
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .menu-item {
