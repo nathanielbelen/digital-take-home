@@ -6,7 +6,6 @@
 .information {
   height: 100%;
   display: flex;
-  color: var(--text-contrast);
   align-items: center;
 }
 
@@ -37,10 +36,11 @@
 
 .locale {
   display: flex;
+  color: var(--text-contrast);
+  background-color: var(--background-contrast);
   align-items: center;
   gap: 7px;
   border: none;
-  background-color: inherit;
   cursor: pointer;
 }
 
@@ -55,19 +55,14 @@
   height: 100%;
   width: 53px;
   background-color: var(--accent);
+  color: var(--text-contrast);
   align-items: center;
   justify-content: center;
   display: flex;
   gap: 6px;
   border: none;
-  color: inherit;
   cursor: pointer;
-}
-
-
-.cart-size {
   font-weight: 700;
   font-size: var(--text-size-md);
   line-height: var(--text-height-md);
-  color: inherit;
 }

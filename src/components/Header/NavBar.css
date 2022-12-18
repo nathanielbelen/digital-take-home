@@ -35,9 +35,9 @@
 .nav-anchor {
   text-decoration: none;
   cursor: pointer;
-  color: inherit;
   border: none;
-  background-color: inherit;
+  color: var(--text-dark);
+  background-color: var(--background-main);
 }
 
 .active {
@@ -74,7 +74,8 @@
 
 .search-button {
   border: none;
-  background-color: inherit;
+  color: var(--text-dark);
+  background-color: var(--background-main);
   cursor: pointer;
 }
 
@@ -156,14 +157,18 @@
   display: flex;
   gap: 4px;
   border: none;
-  background-color: inherit;
+  background-color: var(--background-main);
   color: var(--text-dark);
   cursor: pointer;
+  font-weight: 700;
+  font-size: var(--text-size-md);
+  line-height: var(--text-height-md);
 }
 
 .hamburger {
   cursor: pointer;
-  background-color: inherit;
+  color: var(--text-dark);
+  background-color: var(--background-main);
   border: none;
 }
 
@@ -174,12 +179,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-contrast);
-  color: white;
+  color: var(--text-contrast);
   padding: 17px;
 }
 
 .menu-title button {
-  background-color: inherit;
+  background-color: var(--background-contrast);
+  color: var(--text-contrast);
   border: none;
   cursor: pointer;
 }
@@ -208,17 +214,17 @@
 .menu-item.link {
   justify-content: space-between;
   cursor: pointer;
-  background-color: inherit;
-  color: inherit;
+  background-color: var(--background-main);
+  color: var(--text-dark);
   text-decoration: inherit;
 }
 
 .menu-item.link.base {
-  background-color: white;
+  background-color: var(--background-main);
 }
 
 .menu-item.back {
-  background-color: white;
+  background-color: var(--background-main);
   color: var(--text-dark);
   cursor: pointer;
   border: none;
@@ -242,7 +248,7 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  background-color: inherit;
+  background-color: var(--background-main);
   color: var(--text-dark);
   font-weight: inherit;
   font-size: inherit;
