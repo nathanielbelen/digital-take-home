@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-import ImageLink from '../ImageLink';
 
-// ImageLink = ({ title, link, src, anchorClass, width, height })
 const Cart = ({ src, width, isDesktop }) => (
   <button type="button" className={isDesktop ? 'cart' : 'cart-mobile'}>
     <div className="flex">

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import InformationBar from './desktop/InformationBar';
 import NavBar from './NavBar';
 
@@ -15,6 +16,10 @@ const Header = ({ isDesktop }) => {
       <NavBar isDesktop={isDesktop} />
     </div>
   );
+};
+
+Header.propTypes = {
+  isDesktop: PropTypes.bool.isRequired,
 };
 
 export default Header;

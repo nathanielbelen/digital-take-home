@@ -1,14 +1,9 @@
-import { useState, useCallback, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { useState, useCallback } from 'react';
 import MenuFooter from './MenuFooter';
-import chevron from '@/assets/mobile/nav/menu/chevron.png';
-import close from '@/assets/mobile/nav/menu/close.png';
-
-class Visit {
-  constructor(val, prev) {
-    this.val = val;
-    this.prev = prev || null;
-  }
-}
+import MenuTitle from './MenuTitle';
+import MenuItem from './MenuItem';
+import MenuBack from './MenuBack';
 
 const MenuNav = ({ setShowMenuNav, navigation }) => {
   const nav = useCallback(() => navigation.map((val) => {
@@ -49,58 +44,9 @@ const MenuNav = ({ setShowMenuNav, navigation }) => {
   );
 };
 
-const MenuTitle = ({ setShowMenuNav }) => {
-  const handleClick = () => {
-    setShowMenuNav(false);
-  };
-
-  return (
-    <div className="menu-title">
-      <div>Menu</div>
-      <button type="button" onClick={handleClick}>
-        <img src={close} width="12" />
-      </button>
-    </div>
-  );
+MenuNav.propTypes = {
+  setShowMenuNav: PropTypes.func.isRequired,
+  navigation: PropTypes.array.isRequired,
 };
-
-const MenuItem = ({
-  setCurrentBack,
-  setCurrentNav,
-  currentNav,
-  currentBack,
-  index,
-  destination,
-}) => {
-  const handleClick = () => {
-    setCurrentBack(new Visit(currentNav, currentBack));
-    setCurrentNav(currentNav[index].next);
-  };
-
-  return (
-    <button
-      type="button"
-      className={`menu-item link ${!currentBack && 'base'}`}
-      key={index}
-      onClick={handleClick}
-    >
-      <div>{destination.name}</div>
-      <img src={chevron} width="10" alt={destination.name} />
-    </button>
-  );
-};
-
-const MenuBack = ({ setCurrentNav, setCurrentBack, currentBack }) => (
-  <button
-    className="menu-item back"
-    onClick={() => {
-      setCurrentNav(currentBack.val);
-      setCurrentBack(currentBack.prev);
-    }}
-  >
-    <img src={chevron} width="10" />
-    <div>GO BACK</div>
-  </button>
-);
 
 export default MenuNav;

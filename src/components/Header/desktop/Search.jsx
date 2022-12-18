@@ -11,7 +11,7 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('submitted search term: ', searchTerm);
+    // submit(searchTerm)
   };
 
   return (

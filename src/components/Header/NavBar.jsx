@@ -1,15 +1,22 @@
+import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+
+// desktop imports
 import { NavLinks, NavLink } from './desktop/NavLinks';
+import { Emblems, Emblem } from './desktop/Emblems';
 import Logo from './desktop/Logo';
 import Dropdown from './desktop/Dropdown';
 import Search from './desktop/Search';
 import Cart from './desktop/Cart';
+
+// mobile imports
 import MenuNav from './mobile/MenuNav';
-import { Emblems, Emblem } from './desktop/Emblems';
+import Hamburger from './mobile/Hamburger';
 import './NavBar.css';
+
+// asset imports
 import navigation from '@/assets/navigation.json';
 import search from '@/assets/mobile/nav/search.png';
-import hamburger from '@/assets/mobile/nav/hamburger.png';
 import profile from '@/assets/mobile/nav/profile.png';
 import cart from '@/assets/mobile/nav/cart.png';
 
@@ -58,7 +65,7 @@ const NavBar = ({ isDesktop }) => {
         <Logo width="115" />
       </div>
       <Emblems>
-        <Emblem title="search" src={search} width="15" link="#" />
+        <Emblem title="search" src={search} width="15" link="/" />
         <Emblem title="profile" src={profile} width="15" link="/" />
         <li className="emblem">
           <Cart isDesktop={isDesktop} src={cart} width="16" />
@@ -69,17 +76,8 @@ const NavBar = ({ isDesktop }) => {
   );
 };
 
-const Hamburger = ({ setShowMenuNav }) => {
-  const handleClick = (e) => {
-    e.preventDefault();
-    setShowMenuNav(true);
-  };
-
-  return (
-    <button type="button" className="hamburger" onClick={handleClick}>
-      <img src={hamburger} width="30" alt="menu" />
-    </button>
-  );
+NavBar.propTypes = {
+  isDesktop: PropTypes.bool.isRequired,
 };
 
 export default NavBar;

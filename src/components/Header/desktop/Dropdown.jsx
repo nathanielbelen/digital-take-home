@@ -21,7 +21,7 @@ const Dropdown = ({ navigation, selectedIndex }) => {
 
 Dropdown.propTypes = {
   navigation: PropTypes.array.isRequired,
-  selectedIndex: PropTypes.number
+  selectedIndex: PropTypes.number,
 };
 
 Dropdown.defaultProps = {
