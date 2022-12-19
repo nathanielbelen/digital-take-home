@@ -2,6 +2,7 @@
 
 [Deployed application](https://fluffy-truffle-b7d1eb.netlify.app/)
 
+Built with React and vite.
 
 ### To run the application in development mode:
 Install dependencies
