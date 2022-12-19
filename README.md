@@ -1,6 +1,6 @@
 # Shift7 Digital Take-home README
 
-## Overview
+### Overview
 
 The objective of this project was to implement a pre-designed header and navigation interface using a front-end framework of my choice. My focus was on accurately reproducing the design and ensuring proper functionality of the elements.
 
