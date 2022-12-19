@@ -5,8 +5,9 @@
 The objective of this project was to implement a pre-designed header and navigation interface using a front-end framework of my choice. My focus was on accurately reproducing the design and ensuring proper functionality of the elements.
 
 ### Usage
-To install and run this project, you'll need to have node/npm installed.
-You can install the dependencies of the project by running the following command:
+To install and run this project, you'll need to have node installed.
+
+To install the dependencies of the project:
 ```sh
 npm install
 ```
