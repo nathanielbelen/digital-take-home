@@ -10,11 +10,11 @@ You can install the dependencies of the project by running the following command
 ```sh
 npm install
 ```
-To use run the application in development mode:
+To start the development server:
 ```sh
 npm run dev
 ```
-This will start the development server that serves the application to the default url http://localhost:5173.
+This will serve the application, and the revelant URL will be outputted to the server console.
 
 ### Approach
 To begin this project, I first reviewed all the required documents and instructions. This allowed me to create a diagram that broke down the proposed application into individual elements. Using this diagram, I was able to develop a clear idea of the necessary components and directory structure that I would need to create.
