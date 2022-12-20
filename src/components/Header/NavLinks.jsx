@@ -16,11 +16,19 @@ const NavLink = ({ setSelectedIndex, selectedIndex, index, link }) => {
     }
   };
 
-  return (
-    <button type="button" className="nav-anchor" onClick={handleClick}>
-      <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
-    </button>
-  );
+  if (link.url) {
+    return (
+      <a href={link.url} className="nav-anchor">
+        <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
+      </a>
+    );
+  }
+
+return (
+  <button type="button" className="nav-anchor" onClick={handleClick}>
+    <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
+  </button>
+);
 };
 
 NavLinks.propTypes = {
