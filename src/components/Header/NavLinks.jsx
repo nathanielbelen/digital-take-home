@@ -16,10 +16,12 @@ const NavLink = ({ setSelectedIndex, selectedIndex, index, link }) => {
     }
   };
 
+  // extra functionality possible when full application built out.
+  // give component 'active' flag when routing matches
   if (link.url) {
     return (
       <a href={link.url} className="nav-anchor">
-        <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
+        <div className="nav-link">{link.name}</div>
       </a>
     );
   }
