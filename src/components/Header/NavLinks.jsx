@@ -24,11 +24,11 @@ const NavLink = ({ setSelectedIndex, selectedIndex, index, link }) => {
     );
   }
 
-return (
-  <button type="button" className="nav-anchor" onClick={handleClick}>
-    <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
-  </button>
-);
+  return (
+    <button type="button" className="nav-anchor" onClick={handleClick}>
+      <div className={`nav-link ${index === selectedIndex ? 'active' : ''}`}>{link.name}</div>
+    </button>
+  );
 };
 
 NavLinks.propTypes = {
