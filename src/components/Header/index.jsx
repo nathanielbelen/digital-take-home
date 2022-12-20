@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import InformationBar from './desktop/InformationBar';
+import InformationBar from './InformationBar';
 import NavBar from './NavBar';
 import './index.css';
 

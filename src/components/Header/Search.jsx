@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ImageLink from '../ImageLink';
+import ImageLink from './ImageLink';
 import search from '@/assets/desktop/nav/search.png';
 
 const Search = () => {

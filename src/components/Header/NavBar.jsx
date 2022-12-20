@@ -6,15 +6,15 @@ import Cart from './Cart';
 import './NavBar.css';
 
 // desktop imports
-import { NavLinks, NavLink } from './desktop/NavLinks';
-import { Emblems, Emblem } from './desktop/Emblems';
-import Logo from './desktop/Logo';
-import Dropdown from './desktop/Dropdown';
-import Search from './desktop/Search';
+import { NavLinks, NavLink } from './NavLinks';
+import { Emblems, Emblem } from './Emblems';
+import Logo from './Logo';
+import Dropdown from './Dropdown';
+import Search from './Search';
 
 // mobile imports
-import MenuNav from './mobile/MenuNav';
-import Hamburger from './mobile/Hamburger';
+import MenuNav from './MenuNav';
+import Hamburger from './Hamburger';
 
 // asset imports
 import navigation from '@/assets/navigation.json';

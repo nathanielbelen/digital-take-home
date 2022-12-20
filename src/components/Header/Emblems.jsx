@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ImageLink from '../ImageLink';
+import ImageLink from './ImageLink';
 
 const Emblems = ({ children }) => (
   <ul className="emblems">

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ImageLink from '../ImageLink';
+import ImageLink from './ImageLink';
 import logo from '@/assets/desktop/nav/logo.png';
 
 const Logo = ({ width }) => (
