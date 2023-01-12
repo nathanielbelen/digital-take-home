@@ -15,7 +15,7 @@ To start the development server:
 ```sh
 npm run dev
 ```
-This will serve the application, and the revelant URL will be outputted to the server console.
+This will serve the application, and the relevant URL will be outputted to the server console.
 
 ### Approach
 To begin this project, I first reviewed all the required documents and instructions. This allowed me to create a diagram that broke down the proposed application into individual elements. Using this diagram, I was able to develop a clear idea of the necessary components and directory structure that I would need to create.
