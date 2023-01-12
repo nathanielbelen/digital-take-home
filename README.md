@@ -4,6 +4,9 @@
 
 The objective of this project was to implement a pre-designed header and navigation interface using a front-end framework of my choice. My focus was on accurately reproducing the design and ensuring proper functionality of the elements.
 
+### Tools
+React, Vite
+
 ### Usage
 To install and run this project, you'll need to have node installed.
 
